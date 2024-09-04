@@ -10,6 +10,6 @@ using (var service = GrpcChannel.ForAddress("https://localhost:7197/"))
         Num2 = 20
     };
     var result = client.Sum(req);
-    Console.WriteLine(result);
+    Console.WriteLine(result.Result);
     Console.ReadKey();
 }
